@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Joddy</title>
+    <meta name="description" content="The fundamental">
+    <meta name="author" content="Joddy">
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="base.css">
+    
+    <!-- JavaScript file -->
+    <script src="getdates.js" defer></script>
 </head>
 <body>
-    <h1> WDD 131 - Joddy</h1>
+    <header>
+        <h1>WDD 131 - Joddy</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Card 1: Resources and Tutorials</h2>
+            <p>Here are some useful resources for learning web development:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs - HTML</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs - CSS</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Web Docs - JavaScript</a></li>
+            </ul>
+            <img src="images/tutorial.jpg" alt="Web development tutorial">
+        </section>
+
+        <section class="card">
+            <h2>Card 2: My Web Development Journey</h2>
+            <p>Web development has been an exciting journey for me. Here are some things I've learned:</p>
+            <ul>
+                <li>HTML5 is the backbone of every webpage.</li>
+                <li>CSS3 makes a website visually appealing and responsive.</li>
+                <li>JavaScript enables interactivity and functionality on the webpage.</li>
+            </ul>
+            <img src="images/webdev.jpg" alt="Web development journey">
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Joddy, [Your State or Country].
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
