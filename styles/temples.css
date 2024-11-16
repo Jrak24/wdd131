@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Mobile view menu (default) */
+#menu {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+#hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Temples Grid */
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column in mobile */
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Dynamic Footer Year and Last Modified */
+#currentyear, #lastModified {
+    font-weight: bold;
+}

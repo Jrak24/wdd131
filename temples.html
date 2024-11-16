@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples - WDD 131</title>
+    <meta name="description" content="A collection of temples">
+    <meta name="author" content="Joddy Sornsomrej">
+
+    <!-- Link to mobile-first CSS (temples.css) -->
+    <link rel="stylesheet" href="styles/temples.css">
+
+    <!-- Link to larger view CSS (temples-large.css) -->
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    
+    <!-- JavaScript file, deferred -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Temples</h1>
+        <nav>
+            <!-- Mobile-first navigation menu with a hamburger -->
+            <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <ul id="menu" class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temples Collection</h2>
+
+        <section class="temples-grid">
+            <figure>
+                <img src="images/temple1.jpg" alt="Colonial Juarez Temple">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Montreal Quebec Temple">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <!-- Repeat for 9 figures -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 🌴 Joddy Sornsomrej. Madagascar🌴</p>
+        <p>&copy; <span id="currentyear"></span> Your Name. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
