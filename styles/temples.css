@@ -27,6 +27,7 @@ nav {
     align-items: center;
 }
 
+/* Navigation Styling */
 nav ul {
     display: flex;
     list-style-type: none;
@@ -45,6 +46,7 @@ nav a {
 /* Mobile view menu (default) */
 #menu {
     display: flex;
+    gap: 1rem; /* Added some space between menu items */
 }
 
 .hidden {
@@ -52,7 +54,7 @@ nav a {
 }
 
 #hamburger {
-    display: block;
+    display: none; /* Initially hide hamburger */
     background: none;
     border: none;
     font-size: 2rem;
@@ -87,4 +89,30 @@ footer {
 /* Dynamic Footer Year and Last Modified */
 #currentyear, #lastModified {
     font-weight: bold;
+}
+
+/* Large screens (tablets and above) */
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: block; /* Switch to block for large screens */
+    }
+    
+    #hamburger {
+        display: none; /* Hide the hamburger button on larger screens */
+    }
+
+    #menu {
+        display: block; /* Show menu on larger screens */
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets and larger */
+    }
+}
+
+/* Extra large screens (desktops) */
+@media screen and (min-width: 1024px) {
+    .temples-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on larger desktops */
+    }
 }

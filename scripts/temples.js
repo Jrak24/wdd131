@@ -1,4 +1,3 @@
-// Dynamic Footer (Year and Last Modified)
 document.addEventListener("DOMContentLoaded", () => {
     // Set current year
     const currentYearElement = document.getElementById("currentyear");
@@ -10,7 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastModifiedElement = document.getElementById("lastModified");
     if (lastModifiedElement) {
         const lastModifiedDate = new Date(document.lastModified);
-        const formattedLastModified = lastModifiedDate.toLocaleDateString(); // format based on user's locale
+        const formattedLastModified = lastModifiedDate.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            weekday: "long"
+        });
         lastModifiedElement.textContent = "Last modified: " + formattedLastModified;
     }
 
@@ -18,8 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.getElementById("hamburger");
     const menu = document.getElementById("menu");
 
-    hamburger.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-        hamburger.textContent = hamburger.textContent === "☰" ? "✖" : "☰"; // Toggle between hamburger and "X"
-    });
+    if (hamburger && menu) {
+        hamburger.addEventListener("click", () => {
+            const isOpen = menu.classList.toggle("hidden");
+            hamburger.textContent = isOpen ? "☰" : "✖"; // Toggle between hamburger and "X"
+            hamburger.setAttribute("aria-expanded", !isOpen); // Toggle aria-expanded attribute
+        });
+    }
 });

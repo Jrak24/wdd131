@@ -2,10 +2,20 @@
 @media screen and (min-width: 768px) {
     /* Horizontal navigation */
     nav ul {
+        display: flex; /* Make sure the list is in a row */
         flex-direction: row;
+        justify-content: flex-start; /* Align items to the left */
+        gap: 1rem; /* Add space between menu items */
     }
 
+    /* Hide hamburger button in large screens */
+    #hamburger {
+        display: none;
+    }
+
+    /* Temples grid: 3 columns in larger views */
     .temples-grid {
         grid-template-columns: repeat(3, 1fr); /* 3 columns in larger views */
+        gap: 1.5rem; /* Increase gap between items for larger screens */
     }
 }
