@@ -6,8 +6,7 @@
     }
 
     nav ul {
-        display: flex; /* Flex on large screens */
-        justify-content: flex-start; /* Align to the left */
+        display: block; /* Default behavior for large screens */
     }
 
     /* Temples Grid - 3 columns on larger views */
