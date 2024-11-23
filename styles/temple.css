@@ -1,0 +1,68 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Global Variables */
+:root {
+    --primary-bg-color: #333;
+    --primary-text-color: #fff;
+    --gap-spacing: 1rem;
+    --header-font-size: 2rem;
+    --menu-font-size: 1rem;
+    --footer-padding: 1rem;
+    --grid-gap: 1.5rem;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    padding: var(--gap-spacing);
+}
+
+header h1 {
+    font-size: var(--header-font-size);
+    text-align: center;
+}
+
+/* Hero Section (Responsive Images) */
+#hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Weather Section */
+#weather {
+    text-align: center;
+    margin: 2rem;
+}
+
+#weather h3 {
+    font-size: 1.5rem;
+}
+
+.weather-icon {
+    font-size: 1.5rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: var(--footer-padding);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}

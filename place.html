@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place: Near Morondava Baobab Alley</title>
+    <meta name="description" content="A page about Madagascar">
+    <meta name="author" content="Joddy Sornsomrej">
+
+    <!-- Link to the main CSS file -->
+    <link rel="stylesheet" href="styles/temple.css">
+
+    <!-- Link to the large view CSS file -->
+    <link rel="stylesheet" href="styles/temple-large.css" media="screen and (min-width: 768px)">
+
+    <!-- Link to JavaScript -->
+    <script src="scripts/temple.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Explore Madagascar and his surroudings</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section (Responsive Image) -->
+        <section id="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-small.webp">
+                <source media="(min-width: 601px)" srcset="images/hero-large.webp">
+                <img src="images/hero-large.webp" alt="[Country/Location Name] Overview">
+            </picture>
+            <h2>Welcome to Madagascar</h2>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <h3>Weather <span id="weather-icon" class="weather-icon"></span></h3>
+            <p>Temperature: <span id="temperature">-10°C</span></p>
+            <p>Wind Speed: <span id="windspeed">15 km/h</span></p>
+            <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Joddy Sornsomrej. Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </main>
+
+</body>
+</html>

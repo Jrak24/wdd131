@@ -1,0 +1,14 @@
+/* Media Query for Tablets and Larger Screens (min-width: 768px) */
+@media screen and (min-width: 768px) {
+    /* Weather Section Weather Icon */
+    #weather h3::after {
+        content: "⛅"; /* Adds the weather icon after the Weather heading */
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+    }
+
+    /* Adjust Header Font Size */
+    header h1 {
+        font-size: 3rem;
+    }
+}
