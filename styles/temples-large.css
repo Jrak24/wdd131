@@ -19,3 +19,12 @@
         gap: 1.5rem; /* Increase gap between items for larger screens */
     }
 }
+
+/* Media Query for Desktops and Larger Screens (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    /* Temples Grid - 4 columns on larger screens */
+    .temples-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger desktops */
+        gap: 2rem; /* Increased gap for large screens */
+    }
+}
