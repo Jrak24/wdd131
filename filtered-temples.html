@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album - Enhanced</title>
-  <link rel="stylesheet" href="styles/filtered-temples.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a collection of temples with filtered views and images. Learn about the history, size, and dedication dates of each temple.">
+    <meta name="author" content="Joddy Sornsomrej">
+    <title>Temple Picture Album - Filtered and Enhanced</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#" id="home">Home</a></li>
-        <li><a href="#" id="old">Old</a></li>
-        <li><a href="#" id="new">New</a></li>
-        <li><a href="#" id="large">Large</a></li>
-        <li><a href="#" id="small">Small</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <nav>
+            <a href="#" id="all">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
 
-  <main id="temple-container"></main>
+    <main>
+        <h2>Featured Temples</h2>
+        <div id="temple-container"></div>
+    </main>
 
-  <footer>
-    <p>&copy; <span id="current-year"></span> | Last modified: <span id="last-modified"></span></p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Temple Album. Last modified: <span id="last-modified"></span></p>
+    </footer>
 
-  <script src="scripts/filtered-temples.js"></script>
+    <script src="scripts/filtered-temples.js" defer></script>
 </body>
 </html>
