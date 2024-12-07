@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form id="product-review-form" method="GET" action="review.html">
+      <label for="product-name">Product Name</label>
+      <select id="product-name" name="product-name" required>
+        <option value="" disabled selected>Select a Product...</option>
+      </select>
+
+      <label for="rating">Overall Rating</label>
+      <div id="rating">
+        <!-- Rating options will be filled dynamically -->
+      </div>
+
+      <label for="install-date">Date of Installation</label>
+      <input type="date" id="install-date" name="install-date" required>
+
+      <label>Useful Features</label>
+      <div id="features">
+        <!-- Features checkboxes will be filled dynamically -->
+      </div>
+
+      <label for="written-review">Written Review</label>
+      <textarea id="written-review" name="written-review" rows="4" placeholder="Write your review here..."></textarea>
+
+      <label for="user-name">Your Name (Optional)</label>
+      <input type="text" id="user-name" name="user-name">
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Product Review Form</p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>
