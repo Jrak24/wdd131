@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France - Travel Guide</title>
+    <link rel="stylesheet" href="styles/website_style.css">
+</head>
+<body>
+    <header>
+        <h1>Explore France</h1>
+        <nav>
+            <ul>
+                <li><a href="website.html">Home</a></li>
+                <li><a href="france.html">France</a></li>
+                <li><a href="japan.html">Japan</a></li>
+                <li><a href="spain.html">Spain</a></li>
+                <li><a href="brazil.html">Brazil</a></li>
+                <li><a href="italy.html">Italy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="country-info">
+            <h2>Welcome to France</h2>
+            <img src="images/france.jpg" alt="France" class="country-image">
+
+            <h3>Best Foods</h3>
+            <ul>
+                <li>Baguette</li>
+                <li>Croissant</li>
+                <li>Ratatouille</li>
+                <li>Escargot</li>
+            </ul>
+
+            <h3>Popular Activities</h3>
+            <ul>
+                <li>Eiffel Tower visit</li>
+                <li>Louvre Museum</li>
+                <li>Wine tasting in Bordeaux</li>
+            </ul>
+
+            <h3>Top Hotels</h3>
+            <ul>
+                <li>The Ritz Paris</li>
+                <li>Le Meurice</li>
+                <li>Shangri-La Hotel</li>
+            </ul>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact-form">
+            <h3>Contact Us for More Information</h3>
+            <form id="feedback-form" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Guide. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts/website-script.js"></script>
+</body>
+</html>
